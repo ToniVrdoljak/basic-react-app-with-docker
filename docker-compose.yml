@@ -2,21 +2,6 @@ version: '3'
 
 services:
   web:
-    restart: always
-    build:
-      context: .
-      dockerfile: Dockerfile.dev
+    build: .
     ports:
-      - 8081:3000
-    volumes:
-      - /usr/app/node_modules
-      - .:/usr/app
-
-  tests:
-    build:
-      context: .
-      dockerfile: Dockerfile.dev
-    volumes:
-      - /usr/app/node_modules
-      - .:/usr/app
-    command: ["npm", "run", "test"]
+      - "80:80"
