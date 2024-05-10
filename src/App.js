@@ -7,7 +7,7 @@ function App() {
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
-          This is a basic react app example
+          This is a basic react app intended for showing how docker and ci-cd works
         </p>
         <a
           className="App-link"
