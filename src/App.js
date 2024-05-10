@@ -7,7 +7,7 @@ function App() {
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
-          This is production app
+          This is a basic react app example
         </p>
         <a
           className="App-link"
