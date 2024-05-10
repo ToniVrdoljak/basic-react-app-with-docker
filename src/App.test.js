@@ -9,7 +9,7 @@ test('renders learn react link', () => {
 
 test('renders description', () => {
   render(<App />);
-  const linkElement = screen.getByText(/this is a basic react app example/i);
+  const linkElement = screen.getByText(/This is a basic react app intended for showing how docker and ci-cd works/i);
   expect(linkElement).toBeInTheDocument();
 });
 
