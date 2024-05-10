@@ -1,0 +1,10 @@
+sudo: required
+
+services:
+  - docker
+
+before_install:
+  - docker build -f Dockerfile.dev -t tonivrd/basic-react-app-with-docker .
+
+script:
+  - docker run -e CI=true tonivrd/basic-react-app-with-docker npm run test
